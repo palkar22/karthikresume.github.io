@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karthik NP's Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #dce5e0;
+      color: #333;
+    }
+
+    header {
+      background-color: #000; /* Black */
+      padding: 30px; /* Increased padding */
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #fff; /* White */
+      font-size: 28px; /* Larger font size */
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 80px; /* Larger image size */
+      height: 80px; /* Larger image size */
+      object-fit: cover;
+      margin-right: 20px;
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .add-btn,
+    .show-btn {
+      background-color: #000; /* Black */
+      color: #fff; /* White */
+      padding: 15px; /* Increased padding */
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+
+    .show-btn:hover {
+      background-color: #333; /* Darker shade of black on hover */
+    }
+
+    .data-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .data-item {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 10px;
+      width: 300px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .pdf-link {
+      color: #3498db;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .add-form {
+      display: none;
+      padding: 15px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    input, button {
+      margin-bottom: 10px;
+      padding: 10px;
+      width: calc(100% - 20px);
+      box-sizing: border-box;
+    }
+
+    .form-btn {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="kar.png" alt="Karthik NP's Photo">
+    <h1>NP Karthik</h1>
+  </header>
+
+</body>
+</html>
+<!-- About Section -->
+<section>
+  <h2>About</h2>
+  <div class="data-container" id="participation-container"></div>
+  <div class="tab-container">
+    <button class="show-btn" onclick="aboutPage()">About</button>
+  </div>
+  <div class="add-form" id="participation-form">
+    <!-- Add form fields for participation here -->
+    <button class="form-btn" onclick="addParticipation()">About</button>
+  </div>
+</section>
+<script>
+  function aboutPage() {
+    window.location.href = "about.html";
+  }
+
+</script>
+
+<section>
+  <h2>Education</h2>
+  <div class="data-container" id="participation-container"></div>
+  <div class="tab-container">
+    <button class="show-btn" onclick="aboutedu()">Education</button>
+  </div>
+  <div class="add-form" id="participation-form">
+    <!-- Add form fields for participation here -->
+    <button class="form-btn" onclick="addParticipation()">About</button>
+  </div>
+</section>
+<script>
+  function aboutedu() {
+    window.location.href = "edu.html";
+  }
+
+</script>
+
+
+<!--Experience Section-->
+<!-- Experience Section -->
+<section>
+  <h2>Experience</h2>
+  <div class="data-container" id="experience-container"></div>
+  <div class="tab-container">
+    <button class="show-btn" onclick="openExperiencePage()">Show Experience</button>
+  </div>
+  <div class="add-form" id="experience-form">
+    <!-- Add form fields for experience here -->
+    <button class="form-btn" onclick="addExperience()">Add Experience</button>
+  </div>
+</section>
+<script>
+  function openExperiencePage() {
+    window.location.href = "exp.html";
+  }
+
+  // Your other functions (addExperience, etc.) go here
+</script>
+<style>
+  /* Add this CSS to your existing styles */
+  .show-btn {
+    background-color: #000; /* Black */
+    color: #fff; /* White */
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .show-btn:hover {
+    background-color: #333; /* Darker shade of black on hover */
+  }
+</style>
+
+<!-- Participation Section -->
+<section>
+  <h2>Participation</h2>
+  <div class="data-container" id="participation-container"></div>
+  <div class="tab-container">
+    <button class="show-btn" onclick="openParticipationPage()">Show Participation</button>
+  </div>
+  <div class="add-form" id="participation-form">
+    <!-- Add form fields for participation here -->
+    <button class="form-btn" onclick="addParticipation()">Add Participation</button>
+  </div>
+</section>
+<script>
+  function openParticipationPage() {
+    window.location.href = "part.html";
+  }
+
+  // Your other functions (addParticipation, etc.) go here
+</script>
+
+<!-- Achievement Section -->
+<section>
+  <h2>Achievement</h2>
+  <div class="data-container" id="achievement-container"></div>
+  <div class="tab-container">
+    <button class="show-btn" onclick="openAchievementPage()">Show Achievement</button>
+  </div>
+  <div class="add-form" id="achievement-form">
+    <!-- Add form fields for achievement here -->
+    <button class="form-btn" onclick="addAchievement()">Add Achievement</button>
+  </div>
+</section>
+<script>
+  function openAchievementPage() {
+    window.location.href = "achieve.html";
+  }
+
+  // Your other functions (addAchievement, etc.) go here
+</script>
+
+<!-- Certification Section -->
+<section>
+  <h2>Certification</h2>
+  <div class="data-container" id="certification-container"></div>
+  <div class="tab-container">
+    <button class="show-btn" onclick="openCertificationPage()">Show Certification</button>
+  </div>
+  <div class="add-form" id="certification-form">
+    <!-- Add form fields for certification here -->
+    <button class="form-btn" onclick="addCertification()">Add Certification</button>
+  </div>
+</section>
+<script>
+  function openCertificationPage() {
+    window.location.href = "cert.html";
+  }
+
+  // Your other functions (addCertification, etc.) go here
+</script>
+
+  </main>
+
+  </script>
+</body>
+</html>
